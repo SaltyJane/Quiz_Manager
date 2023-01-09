@@ -13,6 +13,7 @@
 * Click 'phpMyAdmin' in the top-right
 * Click 'User accounts' and then 'Add user account'
 * Create a user account with all permissions ticked. For mine, I have used (Username: QuizManager, Password: password, Hostname: localhost and the Host dropdown should be 'Local') for ease and testing purposes. In a properly hosted website, the password would need to be much more secure.
+* You MUST use the same details as above when creating the account, or the application will not connect to the database.
 
 ### Opening the project
 
