@@ -5,6 +5,15 @@
 * First you will need to download Xampp server at this address: https://www.apachefriends.org/download.html
 * Once this has been installed, you will need to move this project folder into C:\xampp\htdocs\
 
+### Creating a user account in phpMyAdmin
+
+* Open the Xampp control panel
+* Click 'start' on Apache
+* Open a browser and go to 'localhost' and press enter
+* Click 'phpMyAdmin' in the top-right
+* Click 'User accounts' and then 'Add user account'
+* Create a user account with all permissions ticked. For mine, I have used (Username: QuizManager, Password: password) for ease and testing purposes. In a properly hosted website, the password would need to be much more secure.
+
 ### Opening the project
 
 * Open the Xampp control panel
