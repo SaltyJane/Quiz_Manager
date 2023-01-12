@@ -1,0 +1,198 @@
+.text-black {
+    color: #000 !important;
+}
+
+.text-black:hover {
+    opacity: 80%;
+}
+
+/* set custom background colours */
+.bg-blue {
+    background: #6E9BCF !important;
+}
+
+.bg-light-grey {
+    background: #F0F4F5 !important;
+}
+
+/* Ensure logo cannot be too large, but
+is also responsive and retains */
+#company-logo {
+    width: 30%;
+    height: auto;
+}
+
+/* Add padding to main menu items */
+.navbar-nav>li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Remove right-padding from last menu item */
+.navbar-nav>li:last-of-type {
+    padding-right: 0;
+}
+
+.nav-link {
+    position: relative;
+}
+
+/* style the login card */
+#login-card {
+    width: 350px;
+    border-radius: 25px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 50px;
+}
+
+/* add a class which has 100 viewheight */
+.custom-vh {
+    height: 100vh;
+}
+
+/* style the tiles for quizzes */
+.quiz-tile {
+    list-style: none;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+}
+
+/* styling for the links */
+.quiz-tile>.quiz-link {
+    color: black;
+    font-size: 1.2em;
+    display: block;
+    padding: 30px;
+}
+
+/* styling for the list of quizzes */
+#quiz-lister {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add more padding to the question tiles */
+.quiz-tile.question-tile {
+    padding: 20px;
+}
+
+/* make the correct answer visually distinctive */
+.correct-answer {
+    color: rgb(1, 88, 1);
+    font-weight: 600;
+}
+
+/* add padding to each answer */
+.answers-lister>li {
+    padding: 10px;
+}
+
+label,
+input {
+    display: block;
+}
+
+input {
+    max-width: 100vw;
+    width: 90%;
+}
+
+.question-title,
+#Quiz_title {
+    width: 100%;
+}
+
+label[for=question-amount],
+#question-amount {
+    display: inline;
+}
+
+#question-amount {
+    width: 3em;
+}
+
+/* Remove controls from number input */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (min-width: 850px) {
+    #quiz-lister {
+        max-width: 80%;
+    }
+}
+
+/* give the login card less margin on smaller screens */
+@media (max-width: 992px) {
+    #login-card {
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /*  Override the bootstrap navbar so that the menu items
+    are on the right-hand side. The media query ensures this is only on desktop */
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: 100% !important;
+        justify-content: right;
+    }
+
+    /* Add animation to main menu upon hover */
+    .navbar-nav>.nav-item>.nav-link::before {
+        content: "";
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        height: 1px;
+        /* These scale(0) delcarations ensure this is not constantly displaying. */
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: .3s transform ease;
+        -o-transition: .3s transform ease;
+        transition: .3s transform ease;
+        background: #000;
+    }
+
+    /* Don't show the animation unless hovering */
+    .navbar-nav>.nav-item>.nav-link:hover::before {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* .nav-item {
+    text-align: right;
+} */
+/* 
+.nav-link {
+    position: relative;
+} */
