@@ -46,3 +46,46 @@ If you receive the following error:
 Fatal error: Uncaught mysqli_sql_exception: Duplicate entry 'someUsername' for key 'PRIMARY' in C:\xampp\htdocs\Quiz_Manager\Code\includes\add-users.php:23 Stack trace: #0 C:\xampp\htdocs\Quiz_Manager\Code\includes\add-users.php(23): mysqli_stmt->execute() #1 {main} thrown in C:\xampp\htdocs\Quiz_Manager\Code\includes\add-users.php on line 23
 ````
 This is because there is already a user in the database with one of the usernames you tried to add. You should not receive this error the first time you add users, because the database has only just been created by you, but usernames will need to be updated if you intend to add any additional users.
+
+## Using the website
+
+### Logging in
+
+* Now that you have completed the 'setting up' section above, you can log in with the user details you added to the database.
+* If you did not change the user.csv file, you can use the following combinations to log in:
+  * Username: Edit, Password: Edit
+  * Username: View, Password: View
+  * Username: Restricted, Password: Restricted
+* The username represents the permission level the account has.
+
+### Viewing a quiz
+
+* After logging in, you will be taken to the home page where a list of quizzes are displayed. 
+* Click on the quiz you wish to view. 
+* Users with Restricted permissions will not be able to view the answers to questions, but Edit and View can.
+
+### Editing a quiz
+
+* While viewing the questions and answers to a quiz, and if your permission level is Edit, there will be a button near the top of the page called 'Edit quiz'. Click on it.
+* You will be taken to a pre-filled form, displaying the quiz questions and answers for you to edit. 
+* You can delete questions. This refreshes the page, so be sure to save any other changes before doing this!
+* You can add new questions using a yellow 'Add another question' button near the bottom of the page. 
+* When the quiz is edited to your satisfaction, simply click on the blue 'submit' button. 
+
+Note: There is a question counter near the bottom of the page. You can not edit this value despite being able to highlight it.
+
+### Deleting a quiz
+
+* While viewing the questions and answers to a quiz, and if your permission level is Edit, there will be a button near the top of the page called 'Delete quiz'. Click on it.
+* You will get a browser popup asking if you are sure. Click OK.
+* The quiz will be deleted and you will return to the home page.
+
+### Adding a new quiz
+
+* On any page, in the main menu, there is a menu item called 'Add a quiz' (only for users with Edit permissions). Click on it.
+* You will be taken to an empty form. Fill it in with the quiz details you want to add. 
+* You can add new questions at the bottom of the page, the same as on the 'edit quiz' page. 
+* You can delete questions, but only if they were added manually using the above method.
+* Once the form has been filled out, submit it using the blue 'submit' button at the bottom of the page.
+
+Note: There is a question counter near the bottom of the page. You can not edit this value despite being able to highlight it.
