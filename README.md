@@ -3,7 +3,9 @@
 ## Setting Up
 
 * First you will need to download Xampp server at this address: https://www.apachefriends.org/download.html
-* Once this has been installed, you will need to move this project folder into C:\xampp\htdocs\
+* Once this has been installed, download this repository from GitHub.
+* Once unzipped, change the folder name to 'Quiz_Manager'.
+* Move this project folder (Quiz_Manager) into C:\xampp\htdocs\
 
 ### Creating a user account in phpMyAdmin
 
