@@ -19,7 +19,7 @@
 
 * Open the Xampp control panel
 * Click 'start' on Apache
-* Click 'start' on MySQL. If this results in an error, click on 'Services' on the right-hand side, and scroll down to 'MySQL80'. Stop this service if the option is available, and then try this step again.
+* Click 'start' on MySQL. If this results in an error or it does not work, click on 'Services' on the right-hand side, and scroll down to 'MySQL80'. Stop this service if the option is available, and then try this step again.
 * Open a browser of your choice. I used Safari Developer edition
 * In the browser, type 'localhost' and press enter.
 * To open the database, click on the 'phpMyAdmin' option in the menu.
