@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Include my own custom stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="includes/style.css">
     <!-- Declare the title as a PHP variable which does not yet exist. 
     In each php file $title will be delcared before including the header file. -->
     <title><?php echo $title; ?> | Quiz Manager</title>
