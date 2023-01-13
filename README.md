@@ -6,11 +6,15 @@
 * Once this has been installed, download this repository from GitHub.
 * Once unzipped, change the folder name to 'Quiz_Manager'.
 * Move this project folder (Quiz_Manager) into C:\xampp\htdocs\
+* If you have unzipped the folder, make sure that there is only 1 instance of it. For example, your path should simply be C:\xampp\htdocs\Quiz_Manager\ and then inside the Quiz_Manager folder DIRECTLY, is the documentation and the Code, Design Docs and SQL folders. 
+![image](https://user-images.githubusercontent.com/72222137/212288224-6b3fafd8-eb0c-4076-97a8-6d57f7f464a7.png)
+
 
 ### Creating a user account in phpMyAdmin
 
 * Open the Xampp control panel
 * Click 'start' on Apache
+* Click 'start' on MySQL. If this results in an error or it does not work, click on 'Services' on the right-hand side, and scroll down to 'MySQL80'. Stop this service if the option is available, and then try this step again.
 * Open a browser and go to 'localhost' and press enter
 * Click 'phpMyAdmin' in the top-right
 * Click 'User accounts' and then 'Add user account'
